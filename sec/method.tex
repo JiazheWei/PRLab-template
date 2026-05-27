@@ -1,0 +1,42 @@
+\section{Method}
+\label{sec:method}
+
+We describe the method here. Mathematics is set with \texttt{newpxmath}, which
+pairs cleanly with IBM Plex Serif body text. For example, given an input
+$\mathbf{x} \in \mathbb{R}^d$, we compute
+\begin{equation}
+  \mathbf{y} \;=\; \sigma(\mathbf{W}\mathbf{x} + \mathbf{b}),
+  \label{eq:linear}
+\end{equation}
+where $\sigma$ is the activation. Refer to \cref{eq:linear} via
+\texttt{cleveref}, which is preloaded.
+
+\subsection{Architecture}
+\label{sec:arch}
+
+Subsection headings are slightly smaller than section headings but use the
+same PRLab purple. Inline emphasis still works as expected:
+\textbf{bold text} renders in sans-serif (matching the Seed and Meta
+conventions), while \emph{italic} stays in the serif body face.
+
+\subsection{Training Details}
+\label{sec:train}
+
+A representative table looks like this:
+
+\begin{table}[h]
+  \centering
+  \begin{tabular}{lcc}
+    \toprule
+    \textbf{Model} & \textbf{Params} & \textbf{Accuracy} \\
+    \midrule
+    Baseline & 12M  & 71.3 \\
+    Ours     & 14M  & \textbf{78.9} \\
+    Ours-XL  & 48M  & \textbf{82.4} \\
+    \bottomrule
+  \end{tabular}
+  \caption{A representative comparison table.\label{tab:main}}
+\end{table}
+
+The caption above demonstrates the PRLab caption style: a sans-serif purple
+label (``Table~1'') followed by the caption text in regular small body.

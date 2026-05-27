@@ -1,0 +1,27 @@
+\section{Introduction}
+\label{sec:intro}
+
+This template provides a clean starting point for tech reports out of the
+Pattern Recognition Laboratory at Nanjing University. Section headings are
+rendered in PRLab purple (\texttt{\#3B1A6B}) using IBM Plex Sans, while
+the body uses IBM Plex Serif. Citations such as \citep{vaswani2017attention}
+appear as numeric references in the same purple, giving the document a
+consistent visual rhythm.
+
+\paragraph{How to use this template.}
+Edit \texttt{main.tex} to set your title, authors, affiliations, abstract,
+and metadata. Then add or rewrite the section stubs under \texttt{sec/}.
+Drop your figures into \texttt{fig/} and your BibTeX entries into
+\texttt{references.bib}. Compile with pdfLaTeX:
+
+\begin{center}
+\texttt{pdflatex main \&\& bibtex main \&\& pdflatex main \&\& pdflatex main}
+\end{center}
+
+\paragraph{What the template gives you.}
+A first-page header with PRLab and Nanjing University wordmarks, a framed
+abstract block, three-level section headings in PRLab purple, sans-serif
+captions with colored labels, numeric citations in PRLab purple, and a
+matching appendix style. The wordmarks in \texttt{prlab.cls} are TikZ
+placeholders --- swap in real logo assets via \texttt{\textbackslash
+includegraphics} when they are available.

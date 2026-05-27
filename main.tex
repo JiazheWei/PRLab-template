@@ -1,0 +1,72 @@
+% =============================================================================
+% PRLab Tech Report Template — main.tex
+% Compile with pdfLaTeX (e.g. on Overleaf, or locally via `pdflatex main`).
+% Class is a verbatim fork of the Tsinghua College of AI / ByteDance Seed
+% tech-report template, with PRLab purple #670095 in place of Seed blue.
+% =============================================================================
+\documentclass[]{prlab}
+
+\usepackage[toc,page,header]{appendix}
+\microtypesetup{expansion=false}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{bm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{amsthm}
+\usepackage{xspace}
+\usepackage{wrapfig}
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage{colortbl}
+\usepackage{pifont}        % \ding for the \cmark / \xmark markers used in sec/
+\normalem  % the class loads ulem (\emph defaults to underline) — restore italic
+
+% Tick / cross markers used in the example sections.
+\newcommand{\cmark}{\textcolor{green!60!black}{\ding{51}}}
+\newcommand{\xmark}{\textcolor{red!75!black}{\ding{55}}}
+
+
+\title{PosterCopilot: Toward Layout Reasoning and Controllable Editing for Professional Graphic Design}
+
+\author[1,\star]{First Author}
+\author[1,\star]{Second Author}
+\author[1]{Third Author}
+\author[2,\dagger]{Fourth Author}
+
+\affiliation[1]{Pattern Recognition Laboratory, Nanjing University}
+\affiliation[2]{Collaborating Institution}
+
+\contribution[\star]{Equal Contribution}
+\contribution[\dagger]{Corresponding Author}
+
+\date{\today}
+\checkdata[Code]{\url{https://github.com/your-org/your-project}}
+\checkdata[Project Page]{\url{https://your-project.example.com}}
+\correspondence{\email{correspondence@nju.edu.cn}}
+
+\abstract{%
+Graphic design forms the cornerstone of modern visual communication, serving as a vital medium for promoting cultural and commercial events. Recent advances have explored automating this process using Large Multimodal Models (LMMs), yet existing methods often produce geometrically inaccurate layouts and lack the iterative, layer-specific editing required in professional workflows. To address these limitations, we present PosterCopilot, a framework that advances layout reasoning and controllable editing for professional graphic design. Specifically, we introduce a progressive three-stage training strategy that equips LMMs with geometric understanding and aesthetic reasoning for layout design, consisting of Perturbed Supervised Fine-Tuning, Reinforcement Learning for Visual-Reality Alignment, and Reinforcement Learning from Aesthetic Feedback. Furthermore, we develop a complete workflow that couples the trained LMM-based design model with generative models, enabling layer-controllable, iterative editing for precise element refinement while maintaining global visual consistency. Extensive experiments demonstrate that PosterCopilot achieves geometrically accurate and aesthetically superior layouts, offering fine-grained, layer-wise controllability for professional iterative design. 
+}
+
+
+\begin{document}
+\maketitle
+
+\input{sec/intro}
+\input{sec/method}
+\input{sec/experiments}
+\input{sec/conclusion}
+
+\clearpage
+\bibliographystyle{plainnat}
+\bibliography{references}
+
+\clearpage
+\beginappendix
+\input{sec/appendix}
+
+\end{document}
