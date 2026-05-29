@@ -71,11 +71,3 @@ inside the preamble of `main.tex`, or edit the definitions directly in
 
 See `../DESIGN.md` for the full visual specification (color palette,
 typography, layout, citation style, and the rationale behind each choice).
-
-## Acknowledgements
-
-The sans-serif typeface used throughout this template (section headings,
-affiliations, and metadata) is **ByteSans**. We gratefully acknowledge the
-ByteSans project and its authors for making this beautiful font available —
-it gives the template much of its clean, modern look. All credit for the
-typeface belongs to its original creators.

@@ -199,14 +199,18 @@
 
 %%======== Header and Footer Content ========
 \fancypagestyle{firststyle}{
+    \fancyhf{}   % clear all header/footer slots (otherwise the right header
+                 % falls back to the running section mark, e.g. "1 INTRODUCTION")
     \fancyhead[L]{
-        \vskip 0mm
-        \includegraphics[height=15mm,keepaspectratio]{fig/Nanjing.png}
-    }
-    \fancyhead[R]{
         \vskip 0mm
         \includegraphics[height=15mm,keepaspectratio]{fig/lab_logo.png}
     }
+    % NJU logo removed; fig/Nanjing.png is kept in fig/ for future use.
+    % To bring it back on the right, uncomment the block below:
+    % \fancyhead[R]{
+    %     \vskip 0mm
+    %     \includegraphics[height=15mm,keepaspectratio]{fig/Nanjing.png}
+    % }
 
 }
 
