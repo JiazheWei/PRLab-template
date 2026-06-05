@@ -203,7 +203,7 @@
                  % falls back to the running section mark, e.g. "1 INTRODUCTION")
     \fancyhead[L]{
         \vskip 0mm
-        \includegraphics[height=15mm,keepaspectratio]{fig/lab_logo.png}
+        \includegraphics[height=12mm,keepaspectratio]{fig/lab_logo.png}
     }
     % NJU logo removed; fig/Nanjing.png is kept in fig/ for future use.
     % To bring it back on the right, uncomment the block below:
