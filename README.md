@@ -3,6 +3,13 @@
 Official LaTeX template for tech reports and arXiv preprints out of the
 **Pattern Recognition Laboratory, Nanjing University (PRLab @ NJU)**.
 
+## Preview
+
+<p align="center">
+  <img src="fig/template-1.png" width="48%" alt="Template preview — page 1" />
+  <img src="fig/template-2.png" width="48%" alt="Template preview — page 2" />
+</p>
+
 ## Quick start (Overleaf)
 
 1. Zip the entire `template_prlab/` folder.
@@ -71,3 +78,11 @@ inside the preamble of `main.tex`, or edit the definitions directly in
 
 See `../DESIGN.md` for the full visual specification (color palette,
 typography, layout, citation style, and the rationale behind each choice).
+
+## Acknowledgements
+
+We gratefully thank **ByteDance** for releasing the **ByteSans** typeface,
+which provides the sans-serif font used throughout this template — section
+headings, affiliations, captions, and metadata. The clean, modern look of
+the template owes a great deal to this beautiful font. All credit for the
+typeface belongs to ByteDance and the original ByteSans authors.
